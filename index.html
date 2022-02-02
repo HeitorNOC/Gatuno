@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="animatescroll.js-master/animatescroll.js"></script>
 </head>
 <body>
     <header class="container">
         <nav id="nav" class="navbar">
             <div class="itens">
                 <div class="left">
-                    <a href="#" >Início</a>
-                    <a href="#" class="b1">Sobre nós</a>
+                    <a onclick="$('#home').animatescroll();" >Inicio</a>
+                    <a onclick="$('#sobre-nos').animatescroll();" class="b1">Sobre nós</a>
                 </div>
                 <div class="mid">
                     <img src="images/logo.png">
                 </div>
                 <div class="right">
-                    <a href="#" class="b2">Artistas</a>
-                    <a href="#">Contato</a>
+                    <a onclick="$('[id-or-class-of-element]').animatescroll();" class="b2">Artistas</a>
+                    <a onclick="$('[id-or-class-of-element]').animatescroll();">Contato</a>
                 </div>
             </div>
         </nav>
@@ -34,28 +37,48 @@
             <div class="wrapper">
                 <div class="left">
                     <img src="">
-                    <h1>Foto</h1>
+                    <h1>Gatuno</h1>
+                    <h2>Produções</h1>
+                    <p class="animate__animated animate__fadeInRight animate__faster">Eventos</p>
+                    <p class="animate__animated animate__fadeInRight animate__fast">Produções</p>
+                    <p class="animate__animated animate__fadeInRight">Shows</p>
                 </div>
                 <div class="right">
-                    <h1>Gatuno Produções</h1>
-                    <p class="animate__animated animate__fadeInLeft animate__faster">Eventos</p>
-                    <p class="animate__animated animate__fadeInLeft animate__fast">Produções</p>
-                    <p class="animate__animated animate__fadeInLeft">Shows</p>
+                    <img src="images/Muzy.png">
                 </div>
             </div>
         </section>
 
-        <section id="sobre-nos">
-            <div class="sobre">
+        <section id="sobre-nos" class="xiba">
                 <div class="wrapper">
-                    <div class="left">
-                        <h1>Foto</h1>
-                    </div>
-                    <div class="right">
-                        <h1>Bio</h1>
-                    </div>
                 </div>
-            </div>
+                <div class="opacidade"></div>
+                    <article class="c-carousel c-carousel--simple">
+                        <div class="c-carousel__slides js-carousel--simple">
+                          <article class="c-carousel__slide">
+                              <img src="images/joao.jpeg">
+                              <div class="txt">
+                                  <h4>Lorem ipsum dolor sit.</h4>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur veritatis aut saepe error? Quidem.</p>
+                              </div>
+                        </article>
+                          <article class="c-carousel__slide">
+                              <img src="images/Muzy.png">
+                              <div class="txt">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur veritatis aut saepe error? Quidem.</p>
+                            </div>
+                            </article>
+                          <article class="c-carousel__slide">
+                              <img src="images/Muzy.png">
+                              <div class="txt">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur veritatis aut saepe error? Quidem.</p>
+                            </div>
+                            </article>
+                        </div>
+                        <div class="js-carousel--simple-dots"></div>
+                      </article>
         </section>
 
         <section id="artistas">
@@ -102,6 +125,11 @@
     </main>
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    
+    <script src="main.js"></script>
 </body>
 </html>

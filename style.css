@@ -24,6 +24,12 @@ body {
     width: 200px;
 }
 
+#nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
 #nav .left  {
     padding-left: 50px;
 }
@@ -40,6 +46,9 @@ body {
     border-radius: 25px;
     font-size: 20px;
     font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    transition: ease;
 }
 
 .b1 {
@@ -50,15 +59,74 @@ body {
     margin-right: 40px;
 }
 
+
+
 .linha {
     border: solid .5px;
     position: absolute;
     width: 100%;
     color: yellow;
+    position: fixed;
+    z-index: 99;
+    margin-top: 200px;
+}
+
+#home {
+    padding-top: 200px;
 }
 
 .background {
     background: url('images/pretoebranco.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    filter: blur(2px);
+    z-index: -99;
+    position: absolute;
+}
+
+#home .left h2 {
+    color: yellow;
+    font-size: 100px;
+    margin-left: 90px;
+    margin-bottom: 50px;
+}
+
+
+#home .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 300px 105px 200px;
+}
+
+#home .wrapper h1 {
+    color: yellow;
+    font-size: 140px;
+}
+
+#home .wrapper p {
+    color: white;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+#home .left {
+    margin-top: -120px;
+}
+
+#sobre-nos {
+    padding-top: 200px;
+    min-height: 700px;
+}
+
+
+
+#sobre-nos .wrapper {
+    background: url('images/sobreNos.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -70,25 +138,43 @@ body {
     position: absolute;
 }
 
-#home .wrapper {
+#sobre-nos .c-carousel__slide {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 50px 200px 300px 200px;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0 0 0 300px;
 }
 
-#home .wrapper h1 {
-    color: yellow;
-    font-size: 54px;
-}
-
-#home .wrapper p {
+#sobre-nos .txt p {
     color: white;
-    font-size: 36px;
-    margin-top: 15px;
+    font-size: 20px;
+    padding: 0 10px 0 40px;
 }
 
-#sobre-nos {
-    padding: 200px 0;
-    min-height: 900px;
+#sobre-nos .txt h4 {
+    color: yellow;
+    font-size: 36px;
+    padding: 0 0 20px 40px;
 }
+
+#sobre-nos .txt {
+    padding: 0 600px 0 10px;
+}
+
+#sobre-nos .opacidade {
+    width: 100%;
+    height: 750px;
+    background: black;
+    opacity: 0.7;
+    z-index: -99;
+    position: absolute;
+}
+
+#sobre-nos .c-carousel__slide img {
+    width: 450px;
+    filter: grayscale(100%);
+    border-radius: 40px 10px 10px 40px;
+    margin-top: 50px;
+}
+
