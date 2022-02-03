@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="animatescroll.js-master/animatescroll.js"></script>
 </head>
@@ -15,15 +16,15 @@
         <nav id="nav" class="navbar">
             <div class="itens">
                 <div class="left">
-                    <a onclick="$('#home').animatescroll();" >Inicio</a>
-                    <a onclick="$('#sobre-nos').animatescroll();" class="b1">Sobre nós</a>
+                    <a onclick="$('#home').animatescroll();"><span>Inicio</span></a>
+                    <a onclick="$('#sobre-nos').animatescroll();" class="b1"><span>Sobre nós</span></a>
                 </div>
                 <div class="mid">
                     <img src="images/logo.png">
                 </div>
                 <div class="right">
-                    <a onclick="$('[id-or-class-of-element]').animatescroll();" class="b2">Artistas</a>
-                    <a onclick="$('[id-or-class-of-element]').animatescroll();">Contato</a>
+                    <a onclick="$('#artistas').animatescroll();" class="b2"><span>Artistas</span></a>
+                    <a onclick="$('[id-or-class-of-element]').animatescroll();"><span>Contato</span></a>
                 </div>
             </div>
         </nav>
@@ -53,26 +54,30 @@
                 <div class="wrapper">
                 </div>
                 <div class="opacidade"></div>
+                <div class="blur"></div>
+                <div class="texto">
+                    <h1>Nossa Equipe</h1>
+                </div>
                     <article class="c-carousel c-carousel--simple">
                         <div class="c-carousel__slides js-carousel--simple">
                           <article class="c-carousel__slide">
-                              <img src="images/joao.jpeg">
+                              <img src="images/laura_3.png">
                               <div class="txt">
-                                  <h4>Lorem ipsum dolor sit.</h4>
+                                  <h4>Laura Itamar</h4>
                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur veritatis aut saepe error? Quidem.</p>
                               </div>
                         </article>
                           <article class="c-carousel__slide">
-                              <img src="images/Muzy.png">
+                              <img src="images/gabriella_1.png">
                               <div class="txt">
-                                <h4>Lorem ipsum dolor sit.</h4>
+                                <h4>Gabriella</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur veritatis aut saepe error? Quidem.</p>
                             </div>
                             </article>
                           <article class="c-carousel__slide">
-                              <img src="images/Muzy.png">
+                              <img src="images/joao_2.png">
                               <div class="txt">
-                                <h4>Lorem ipsum dolor sit.</h4>
+                                <h4>João Henrique</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur veritatis aut saepe error? Quidem.</p>
                             </div>
                             </article>
@@ -82,44 +87,48 @@
         </section>
 
         <section id="artistas">
+            <div class="italoback"></div>
             <div class="artistas">
                 <div class="cards">
-                    <div class="card">
-                        <img src="">
+                    <div class="card marcilio">
+                        <img src="images/Marcilio.jpeg">
                         <div class="descricao">
                             <p class="nome">Marcílio Rodrigues</p>
-                            <button class="conheca">Conheça</button>
+                            <a class="conheca">Conheça</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="">
+                        <img src="images/italoSena.jpeg">
                         <div class="descricao">
                             <p class="nome">Italo Sena</p>
-                            <button class="conheca">Conheça</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="">
-                        <div class="descricao">
-                            <p class="nome">Carlos Santos</p>
-                            <button class="conheca">Conheça</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="">
-                        <div class="descricao">
-                            <p class="nome">Italo Lima</p>
-                            <button class="conheca">Conheça</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="">
-                        <div class="descricao">
-                            <p class="nome">Tibério</p>
-                            <button class="conheca">Conheça</button>
+                            <a class="conheca">Conheça</a>
                         </div>
                     </div>
                 </div>
+                <div class="cards2">
+                    <div class="card">
+                        <img src="images/Carlos.jpeg">
+                        <div class="descricao">
+                            <p class="nome">Carlos Santos</p>
+                            <a class="conheca">Conheça</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/italoLima.jpeg">
+                        <div class="descricao">
+                            <p class="nome">Italo Lima</p>
+                            <a class="conheca">Conheça</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/Tiberio.jpeg">
+                        <div class="descricao">
+                            <p class="nome">Tibério</p>
+                            <a class="conheca">Conheça</a>
+                        </div>
+                    </div>
+                </div>
+                    
             </div>
         </section>
     </main>
@@ -129,7 +138,6 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    
     <script src="main.js"></script>
 </body>
 </html>

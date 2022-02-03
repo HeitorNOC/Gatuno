@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,700;1,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/dragon-is-coming');
+:root {
+    --background-color: black;
+    --background-secondary: yellow;
+
+    --neon-yellow: #faed27;
+
+    --text-black: black;
+    --text-white: white;
+    --text-yellow: yellow;
+
+    --font-family: 'Roboto', sans-serif;
+
+    --background-img1: url('images/pretoebranco.jpeg');
+    --background-img2: url('images/sobreNos.jpg');
+    --background-img3: url('images/italoback.jpg');
+}
 
 * {
     margin: 0;
@@ -16,7 +33,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 450px;
-    background: black;
+    background: var(--background-color);
     z-index: 99;
 }
 
@@ -40,15 +57,24 @@ body {
 
 #nav a {
     text-decoration: none;
-    color: black;
+    color: var(--text-black);
     padding: 12px 30px;
-    background: yellow;
+    overflow: hidden;
     border-radius: 25px;
     font-size: 20px;
     font-weight: bolder;
     border: none;
     cursor: pointer;
-    transition: ease;
+    background: var(--background-secondary);
+    transition: 0.5s;
+}
+
+#nav a:hover {
+    background: var(--neon-yellow);
+    box-shadow: 0 0 2.5px var(--neon-yellow),
+    0 0 7.5px var(--neon-yellow),
+    0 0 15px var(--neon-yellow),
+    0 0 25px var(--neon-yellow);
 }
 
 .b1 {
@@ -65,7 +91,7 @@ body {
     border: solid .5px;
     position: absolute;
     width: 100%;
-    color: yellow;
+    color: var(--text-yellow);
     position: fixed;
     z-index: 99;
     margin-top: 200px;
@@ -76,7 +102,7 @@ body {
 }
 
 .background {
-    background: url('images/pretoebranco.jpeg') no-repeat center center fixed; 
+    background: var(--background-img1) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -89,7 +115,7 @@ body {
 }
 
 #home .left h2 {
-    color: yellow;
+    color: var(--text-yellow);
     font-size: 100px;
     margin-left: 90px;
     margin-bottom: 50px;
@@ -104,12 +130,12 @@ body {
 }
 
 #home .wrapper h1 {
-    color: yellow;
+    color: var(--text-yellow);
     font-size: 140px;
 }
 
 #home .wrapper p {
-    color: white;
+    color: var(--text-white);
     font-size: 40px;
     margin-top: 15px;
 }
@@ -126,13 +152,13 @@ body {
 
 
 #sobre-nos .wrapper {
-    background: url('images/sobreNos.jpg') no-repeat center center fixed; 
+    background: var(--background-img2) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 750px;
+    height: 850px;
     filter: blur(2px);
     z-index: -99;
     position: absolute;
@@ -142,18 +168,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 0 0 0 300px;
 }
 
+#sobre-nos .texto  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre-nos .texto h1 {
+    font-size: 72px;
+    color: var(--text-yellow);
+    
+}
+
 #sobre-nos .txt p {
-    color: white;
+    color: var(--text-white);
     font-size: 20px;
     padding: 0 10px 0 40px;
 }
 
 #sobre-nos .txt h4 {
-    color: yellow;
+    color: var(--text-yellow);
     font-size: 36px;
     padding: 0 0 20px 40px;
 }
@@ -164,17 +202,107 @@ body {
 
 #sobre-nos .opacidade {
     width: 100%;
-    height: 750px;
-    background: black;
+    height: 850px;
+    background: var(--background-color);
     opacity: 0.7;
     z-index: -99;
     position: absolute;
 }
 
-#sobre-nos .c-carousel__slide img {
-    width: 450px;
-    filter: grayscale(100%);
-    border-radius: 40px 10px 10px 40px;
-    margin-top: 50px;
+#sobre-nos .blur {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    position: absolute;
+    margin-top: 150px;
+    background: black;
+    opacity: 0.3;
+    justify-content: center;
+    
+    
 }
 
+#sobre-nos .c-carousel__slide img {
+    width: 400px;
+    border-radius: 40px 10px 10px 40px;
+}
+
+#artistas .artistas {
+    background: white;
+    padding-top: 165px;
+}
+
+#artistas .cards {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 400px;
+}
+
+#artistas .card img {
+    width: 300px;
+    filter:brightness(45%);
+    transition: 1s;
+    border-radius: 5px;
+}
+
+#artistas .cards2 {
+    display: grid;
+    padding: 0 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#artistas .descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: 400px;
+}
+
+#artistas .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+}
+
+#artistas .descricao p {
+    font-size: 26px;
+    color: var(--text-white);
+    font-weight: 500;
+}
+
+#artistas .descricao a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+
+#artistas .card img:hover {
+    filter: none;
+}
+
+#artistas .descricao a:hover {
+    color: var(--text-yellow);
+    background: black;
+    border: 2px solid var(--background-secondary);
+}
+
+#artistas .italoback {
+    background: var(--background-img3) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 1550px;
+    filter: grayscale(100%);
+    position: absolute;
+}
