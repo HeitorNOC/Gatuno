@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gatuno Produções</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="animatescroll.js-master/animatescroll.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://use.fontawesome.com/62925a1a99.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
 </head>
 <body>
     <header class="container">
@@ -24,7 +30,7 @@
                 </div>
                 <div class="right">
                     <a onclick="$('#artistas').animatescroll();" class="b2"><span>Artistas</span></a>
-                    <a onclick="$('[id-or-class-of-element]').animatescroll();"><span>Contato</span></a>
+                    <a onclick="$('#contato').animatescroll();"><span>Contato</span></a>
                 </div>
             </div>
         </nav>
@@ -84,24 +90,24 @@
                         </div>
                         <div class="js-carousel--simple-dots"></div>
                       </article>
-        </section>
-
-        <section id="artistas">
-            <div class="italoback"></div>
-            <div class="artistas">
-                <div class="cards">
+                    </section>
+                    
+                    <section id="artistas">
+                        <div class="italoback"></div>
+                        <div class="artistas">
+                            <div class="cards">
                     <div class="card marcilio">
                         <img src="images/Marcilio.jpeg">
                         <div class="descricao">
                             <p class="nome">Marcílio Rodrigues</p>
-                            <a class="conheca">Conheça</a>
+                            <a href="" target="_blank" class="conheca">Conheça</a>
                         </div>
                     </div>
                     <div class="card">
                         <img src="images/italoSena.jpeg">
                         <div class="descricao">
                             <p class="nome">Italo Sena</p>
-                            <a class="conheca">Conheça</a>
+                            <a href="" target="_blank" class="conheca">Conheça</a>
                         </div>
                     </div>
                 </div>
@@ -110,25 +116,49 @@
                         <img src="images/Carlos.jpeg">
                         <div class="descricao">
                             <p class="nome">Carlos Santos</p>
-                            <a class="conheca">Conheça</a>
+                            <a href="" target="_blank" class="conheca">Conheça</a>
                         </div>
                     </div>
                     <div class="card">
                         <img src="images/italoLima.jpeg">
                         <div class="descricao">
                             <p class="nome">Italo Lima</p>
-                            <a class="conheca">Conheça</a>
+                            <a href="" target="_blank" class="conheca">Conheça</a>
                         </div>
                     </div>
                     <div class="card">
                         <img src="images/Tiberio.jpeg">
                         <div class="descricao">
                             <p class="nome">Tibério</p>
-                            <a class="conheca">Conheça</a>
+                            <a href="" target="_blank" class="conheca">Conheça</a>
                         </div>
                     </div>
                 </div>
                     
+            </div>
+        </section>
+        
+        <section id="contato">
+            <div class="linha2"></div>
+            <div class="wrapper">
+                <div class="left">
+                    <a href="https://www.instagram.com/gatunoproducoes/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Gatuno-Produ%C3%A7%C3%B5es-2523494087681266" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UC-zo9vz1vqYKuY8UtgESWxw" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5581997852037" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="right">
+                    <h2>Fale Conosco</h2>
+                    <form action="post">
+                        <label for="text1">Nome</label>
+                        <input id="text1" type="text" class="menor" placeholder="Nome" size="100">
+                        <label for="text2">Email</label>
+                        <input id="text2" type="email" class="menor" placeholder="Email" size="100">
+                        <label for="text3">Mensagem</label>
+                        <input id="text3" type="text" class="maior" size="100">
+                        <input type="submit" class="button">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
